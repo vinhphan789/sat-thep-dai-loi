@@ -55,6 +55,21 @@
       </div>
     </section>
 
+    <section id="bang-gia">
+      <h2>Bảng giá sắt thép</h2>
+      <p class="price-note">Giá tham khảo cập nhật ngày <strong id="ngay-cap-nhat"></strong>, đã gồm VAT, tính theo cây dài 6m. Trọng lượng có thể sai số ±5%. Giá thay đổi theo thị trường, vui lòng <a href="tel:0708005789">gọi 0708 005 789</a> để có giá chính xác.</p>
+
+      <div class="price-tabs" role="tablist">
+        <button type="button" role="tab" aria-selected="true" aria-controls="bang-hop-vuong">Hộp vuông</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="bang-hop-chu-nhat">Hộp chữ nhật</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="bang-ong-tron">Ống tròn</button>
+      </div>
+
+      <div id="bang-hop-vuong" role="tabpanel"></div>
+      <div id="bang-hop-chu-nhat" role="tabpanel" hidden></div>
+      <div id="bang-ong-tron" role="tabpanel" hidden></div>
+    </section>
+
     <section id="giao-hang">
       <img src="images/kho-giao-hang.jpg" alt="Kho hàng và xe giao hàng của Đại Lợi" loading="lazy">
       <h2>Giao hàng nhanh, miễn phí</h2>
@@ -64,16 +79,14 @@
         <section id="lien-he">
       <h2>Liên hệ</h2>
 
-      <p><a href="tel:0708005789" class="btn">📞 Gọi ngay<br>0708 005 789</a></p>
+      <p><a href="tel:0708005789" class="btn">📞 Gọi ngay: 0708 005 789</a></p>
 
       <p><a href="https://zalo.me/0708005789" class="btn" target="_blank" rel="noopener">💬 Chat Zalo</a></p>
 
       <p>🕖 Giờ mở cửa: 7:00 – 17:30, thứ Hai – Chủ nhật</p>
-      <p>👍 Facebook: <a href="https://www.facebook.com/share/19vQG6U8TZ/" target="_blank" rel="noopener">Sắt Thép Đại Lợi</a></p>
-
+      <p><img src="images/facebook.png" alt="" width="24" height="24" class="icon"> Facebook: <a href="https://www.facebook.com/share/19vQG6U8TZ/" target="_blank" rel="noopener">Sắt Thép Đại Lợi</a></p>
       <p>📍 Địa chỉ: Ngã 3 Sa Lung, Vĩnh Linh, Quảng Trị</p>
-      <p><a href="https://maps.app.goo.gl/oFwFaRdzYsju2zr47" class="btn" target="_blank" rel="noopener">🗺️ Chỉ đường</a></p>
-    </section>
+      <p><a href="https://maps.app.goo.gl/oFwFaRdzYsju2zr47" class="btn" target="_blank" rel="noopener"><img src="images/maps-icon.jpg" alt="" width="24" height="24" class="icon"> Mở trong bản đồ <span class="arrow">&#x2197;&#xFE0E;</span></a></p>    </section>
   </main>
 
   <footer class="footer">
@@ -81,6 +94,8 @@
   </footer>
 
   <a href="https://zalo.me/0708005789" class="zalo-float" aria-label="Chat Zalo">Zalo</a>
+
+  <script src="js/bang-gia.js"></script>
 
 </body>
 </html>
