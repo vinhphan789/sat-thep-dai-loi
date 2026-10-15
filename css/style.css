@@ -163,7 +163,43 @@ main {
   color: #555;
 }
 
-/* 8. Bản đồ nhúng Google Maps */
+/* 8. Cam kết: khối nền tối, dấu tích vàng, gạch ngang nét đứt */
+#cam-ket {
+  margin: 24px 0;
+  padding: 32px 24px;
+  color: #fff;
+  background: #2f2f2f;
+  border-radius: 8px;
+}
+
+#cam-ket h2 {
+  margin: 0 0 12px;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+.commit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.commit-list li {
+  padding: 12px 0 12px 36px;
+  font-size: 1.15em;
+  border-bottom: 1px dashed #d98c8c;
+  position: relative;
+}
+
+.commit-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 4px;
+  color: #f5d33b;
+  font-size: 1.1em;
+}
+
+/* 9. Bản đồ nhúng Google Maps */
 .map {
   margin-top: 16px;
   aspect-ratio: 16 / 9;
