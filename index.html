@@ -55,19 +55,27 @@
       </div>
     </section>
 
-    <section id="bang-gia">
-      <h2>Bảng giá sắt thép</h2>
-      <p class="price-note">Giá tham khảo cập nhật ngày <strong id="ngay-cap-nhat"></strong>, đã gồm VAT, tính theo cây dài 6m. Trọng lượng có thể sai số ±5%. Giá thay đổi theo thị trường, vui lòng <a href="tel:0708005789">gọi 0708 005 789</a> để có giá chính xác.</p>
-
-      <div class="price-tabs" role="tablist">
-        <button type="button" role="tab" aria-selected="true" aria-controls="bang-hop-vuong">Hộp vuông</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="bang-hop-chu-nhat">Hộp chữ nhật</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="bang-ong-tron">Ống tròn</button>
+    <section id="sat-hop" class="catalog">
+      <div class="catalog-head">
+        <h2>Sắt hộp</h2>
+        <div class="scroll-btns">
+          <button type="button" class="scroll-btn" data-huong="trai" aria-controls="ds-sat-hop" aria-label="Cuộn sang trái">‹</button>
+          <button type="button" class="scroll-btn" data-huong="phai" aria-controls="ds-sat-hop" aria-label="Cuộn sang phải">›</button>
+        </div>
       </div>
+      <ul id="ds-sat-hop" class="scroller"></ul>
+    </section>
 
-      <div id="bang-hop-vuong" role="tabpanel"></div>
-      <div id="bang-hop-chu-nhat" role="tabpanel" hidden></div>
-      <div id="bang-ong-tron" role="tabpanel" hidden></div>
+    <section id="ton" class="catalog">
+      <div class="catalog-head">
+        <h2>Tôn</h2>
+        <div class="scroll-btns">
+          <button type="button" class="scroll-btn" data-huong="trai" aria-controls="ds-ton" aria-label="Cuộn sang trái">‹</button>
+          <button type="button" class="scroll-btn" data-huong="phai" aria-controls="ds-ton" aria-label="Cuộn sang phải">›</button>
+        </div>
+      </div>
+      <ul id="ds-ton" class="scroller"></ul>
+      <p class="price-note">Giá tham khảo, đã gồm VAT, thay đổi theo thị trường. Vui lòng <a href="tel:0708005789">gọi 0708 005 789</a> để có giá chính xác.</p>
     </section>
 
     <section id="giao-hang">
@@ -86,16 +94,22 @@
       <p>🕖 Giờ mở cửa: 7:00 – 17:30, thứ Hai – Chủ nhật</p>
       <p><img src="images/facebook.png" alt="" width="24" height="24" class="icon"> Facebook: <a href="https://www.facebook.com/share/19vQG6U8TZ/" target="_blank" rel="noopener">Sắt Thép Đại Lợi</a></p>
       <p>📍 Địa chỉ: Ngã 3 Sa Lung, Vĩnh Linh, Quảng Trị</p>
-      <p><a href="https://maps.app.goo.gl/oFwFaRdzYsju2zr47" class="btn" target="_blank" rel="noopener"><img src="images/maps-icon.jpg" alt="" width="24" height="24" class="icon"> Mở trong bản đồ <span class="arrow">&#x2197;&#xFE0E;</span></a></p>    </section>
+      <p><a href="https://maps.app.goo.gl/oFwFaRdzYsju2zr47" class="btn" target="_blank" rel="noopener"><img src="images/maps-icon.jpg" alt="" width="24" height="24" class="icon"> Mở trong bản đồ <span class="arrow">&#x2197;&#xFE0E;</span></a></p>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m3!2m1!1s17.0873183,106.9880813!6i16!3m1!1svi!5m1!1svi" title="Bản đồ đường đến Sắt Thép Đại Lợi, Ngã 3 Sa Lung, Vĩnh Linh, Quảng Trị" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <p>© 2026 Sắt Thép Đại Lợi</p>
+    <p class="credits">Ảnh tôn từ Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Color_Coated_Roofing_Sheets_For_Construction.jpg" target="_blank" rel="noopener">Tradelinkservices</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>), <a href="https://commons.wikimedia.org/wiki/File:Trapezblech-onlineshop-baustoffhandel-carstensen.jpg" target="_blank" rel="noopener">Kassanni</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>), đã thu nhỏ.</p>
   </footer>
 
   <a href="https://zalo.me/0708005789" class="zalo-float" aria-label="Chat Zalo">Zalo</a>
 
-  <script src="js/bang-gia.js"></script>
+  <script src="js/san-pham.js"></script>
 
 </body>
 </html>
